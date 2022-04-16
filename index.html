@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <script src="./fireworks.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+
+    <div id="instructions">
+        <div id="instructionClose">
+            x
+        </div>
+        <img id="instructionImage" src="./int0.png"></img>
+        <div id="clickAdvance">Click to advance</div>
+    </div>
+    <div id="creditPopup">
+        <div id="creditClose">
+            x
+        </div>
+        <div id="creditText">
+            All sound effects from zapsplat.com
+            <br>
+            All other content is original
+        </div>
+    </div>
+    <div id="introCont">
+        <canvas id="introBack"></canvas>
+
+        <img src="./logo.png" id="title">
+        </img>
+        <div id="options">
+            <div id="hostGame" class="options">
+                HOST GAME
+            </div>
+            <h1 style="text-align: center;color:white;">OR</h1>
+            <input id="gameCodeInput" placeholder="ENTER GAME CODE" style="cursor:initial;" class="options">
+            </input>
+            <div id="joinGame" class="options">
+                JOIN GAME
+            </div>
+            <br>
+            <div id="instructionButton" class="options">
+                INSTRUCTIONS
+            </div>
+        </div>
+    </div>
+    <div id="gameCont">
+        <img src="./game.png" style="width:100vw;filter:brightness(0.5) blur(2px);">
+        <div id="dropIndicator">
+
+        </div>
+        <div id="shieldDisplay">
+
+        </div>
+        <div id="waitingMessage">
+            <span>
+                Waiting for 2nd player...
+            </span>
+        </div>
+        <div id="redScoreDisplay">
+            <div id="redScoreText">
+                0
+            </div>
+            <div id="redLivesText">
+                ❤️❤️
+            </div>
+        </div>
+        <div id="yellowScoreDisplay">
+            <div id="yellowScoreText">
+                0
+            </div>
+            <div id="yellowLivesText">
+                ❤️❤️
+            </div>
+        </div>
+        <div id="wordDisplay"></div>
+        <div id="rowShow">⚪⚪⚪</div>
+        <div id="rotateLeft">
+            ↶
+        </div>
+        <div id="rotateRight">
+            ↷
+        </div>
+        <canvas id="gameCanvas">
+
+        </canvas>
+        <canvas id="gameBack">
+
+        </canvas>
+        <div id="cheatSheet"></div>
+        <div id="shieldButton"></div>
+        <div id="doneMove">DONE MOVE</div>
+        <div id="roomCode"></div>
+        <div id="screenWipe">
+            <div id="winTitle">
+                Round Over
+            </div>
+            <div id="wipeInfo">
+                <div id="plusPoints">
+                    +3 Points
+                </div>
+                <div id="nextUp">
+                    Next Up: 4 In A Row
+                </div>
+            </div>
+            <img id="prevBoard">
+
+            </img>
+            <canvas id="fireworkCanvas"></canvas>
+        </div>
+        <div id="winScreen">
+            <div id="gameTitle">
+                Game Over
+            </div>
+            <div id="celebratory">Great job!</div>
+            <div id="showWinner">
+            </div>
+            <div id="scoreRecap">
+            </div>
+            <div id="gamesRecap"></div>
+        </div>
+    </div>
+    <div id="quitCont">
+        Thank you for playing, you can now close the tab.
+    </div>
+</body>
+
+</html>
